@@ -1,0 +1,225 @@
+body{
+    /* Margen predeterminado de las páginas */
+    margin: 0;
+    /* Margen hacia adentro */
+    padding: 0;
+    /* Tamaño de fuente */
+    font-size: 13px;
+    /* Fuente de texto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ********************************************************************************/
+/* *****************************************************************************/
+/* *************************N A V E G A C I Ó N*******************************/
+header{
+    /* width: anchura y height: altura */
+    width: 100%;
+    height: 55px;
+}
+header nav{
+    display: flex;
+    /* Mover mi nav hacia la derecha */
+    justify-content: flex-end;
+}
+header nav .nav-right-section{
+    /* Eliminar viñetas */
+    list-style: none;
+    width: 250px;
+    display: flex;
+    /* Centrar */
+    justify-content: space-between;
+    /* Centrar vertical */
+    align-items: center;
+    height: auto;
+}
+
+nav .nav-right-section a {
+    /* Quitar delineado */
+    text-decoration: none;
+    color: rgba(0, 0, 0, 87);
+}
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /* Tamaño de imagen de fondo contenida*/
+    background-size: contain;
+}
+nav .nav-right-section img{
+    margin-right: 20px;
+    width: 30px;
+    /* Poner bordes redondeados */
+    border-radius: 80%;
+}
+/* ********************************************************************************* */
+/* *************************************************************************** */
+/**************************************************************************/
+/* ***************************** M A I N *******************************/
+
+main{
+
+    /* Margen superior */
+    margin-top: 100px;
+    /* Centrar elemento */
+    text-align: center;
+}
+main .main-logo{
+    width: 380px;
+    /* Propiedad: valor1 valor2 */
+    /* Propiedad: vertical horizontal */
+    /* Para centrar mi elemento */
+    margin: 0 auto;
+    margin-bottom: 40px;
+    }
+
+    main .main-logo img {
+        /* Editar tamaño */
+         height: 92px;
+    }
+    /* Input section */
+    main .main-input{
+        width: 530px;
+        /* Centrar mi elemento */
+        margin: 0 auto;
+        /* Agregar margen inferior */
+    }
+    main .main-input-container{
+        width: 500px;
+        /* Borde de color: anchura de línea, estilo, color border */
+        border: 1px solid #dfe1e5;
+        border-radius: 40px;
+    }
+    main .main-input input{
+        height: 45px;
+        border: none;
+        outline: none;
+        width: 400px;
+    }
+    main .main-input .lupa{
+        background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+        background-size: contain;
+        background-position: center;
+        padding-left: 6%;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+main .main-input .Microfono{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 3%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .Camara{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/028/766/352/original/google-camera-lens-icon-symbol-free-png.png);
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    background-position: center;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 2px 3px rgb(220, 219, 219);
+    border-color: rgb(203, 199, 199);
+}
+
+/**************************** M A I N    B U T T O N S    S E C T I O N *************************/
+
+main .botonesprincipales{
+    /* Ancho */
+    width: 550px;
+    /* Para centrar: Vertical - Horizontal */
+    margin: 0 auto;
+}
+
+main .botonesprincipales div{
+    /* Alinear elementos en una misma línea */
+    display: inline;
+}
+
+main .botonesprincipales button{
+    /* Separar buscadores y botones */
+    margin-top: 30px;
+    /* Eliminar el borde negro */
+    border: none;
+    height: 41px;
+    background-color: #F8F9FA;
+    /* Color de texto */
+    color: #3C4043;
+    border-radius: 5px;
+    padding: 0px 15px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+main .botonesprincipales button:hover{
+    color: #202124;
+    /* Borde + Oscuro al pasar el mouse */
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1 px 1px rgba(0, 0, 0, 0.1);
+}
+
+/***************************************************************************************************************/
+/***********************************************************************************************************/
+/*********************************** F O O T E R *******************************************************/
+
+footer{
+    position: fixed;
+    background-color: #F8F9FA;
+    width: 100x;
+    margin: 80px auto;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(221, 220, 220);
+    height: 48px;
+}
+
+footer .país{
+    margin-left: 30px;
+    background-color:  #F8F9FA;
+    font-size: 16px;
+    height: 18px;
+}
+
+/* Segunda "caja" */
+footer nav{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:  #F8F9FA;
+}
+
+footer nav .footerleft{
+    display: flex;
+    list-style: none;
+    background-color:  #F8F9FA;
+    padding-left: 20px;
+}
+
+footer nav .footerright{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color:  #F8F9FA;
+    margin-left: 385px;
+}
+
+footer .footerleft a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 87);
+    padding: 15px;
+}
+
+footer nav .footerright a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 87);
+    padding: 15px;
+}
